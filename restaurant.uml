@@ -6,7 +6,9 @@
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_IDW1gCBiEfCOcbW_joQElA" name="Restaurant">
       <packagedElement xmi:type="uml:Package" xmi:id="_9kYfwCBiEfCOcbW_joQElA" name="MAdminDashboard">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_M24ZcCBjEfCOcbW_joQElA" name="AdminDashboard"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_M24ZcCBjEfCOcbW_joQElA" name="AdminDashboard">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UVyYsCHcEfC_nNkev7yNLQ" name="manageEditMenu"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_iG-WICBnEfCOcbW_joQElA" name="AdminDashboardImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_rag-ECBnEfCOcbW_joQElA" name="test"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_t5bQgCBnEfCOcbW_joQElA" name="username">
@@ -35,6 +37,9 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_CghoUCHREfCNcqLFs-Q7tw" name="price">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Tb8xMCHdEfC_nNkev7yNLQ" name="category">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_GdEWYCHREfCNcqLFs-Q7tw" client="_jCZNgCHQEfCNcqLFs-Q7tw" supplier="_G1kA0CHPEfCNcqLFs-Q7tw" contract="_G1kA0CHPEfCNcqLFs-Q7tw"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_wMjhsCHQEfCNcqLFs-Q7tw" name="createMenu"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_xAA-8CHQEfCNcqLFs-Q7tw" name="deleteMenu"/>
@@ -44,9 +49,7 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_SNIrICHREfCNcqLFs-Q7tw" name="MOrder">
         <packagedElement xmi:type="uml:Interface" xmi:id="_3J-KUCHREfCNcqLFs-Q7tw" name="Order"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_6OfEMCHREfCNcqLFs-Q7tw" name="OrderImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__oOJACHREfCNcqLFs-Q7tw" name="orderId">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__oOJACHREfCNcqLFs-Q7tw" name="orderId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_DxNXoCHSEfCNcqLFs-Q7tw" name="createdAt">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
@@ -65,7 +68,10 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_DhcV8CHVEfCNcqLFs-Q7tw" name="MPromo">
-        <packagedElement xmi:type="uml:Interface" xmi:id="_JQKMQCHVEfCNcqLFs-Q7tw" name="Promo"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_JQKMQCHVEfCNcqLFs-Q7tw" name="Promo">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qyahUCHdEfC_nNkev7yNLQ" name="reducePrice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wzTswCHdEfC_nNkev7yNLQ" name="calculatePrice"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_LS11sCHVEfCNcqLFs-Q7tw" name="PromoImpl">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_NxpacCHVEfCNcqLFs-Q7tw" name="eventName">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -76,7 +82,86 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UxQ38CHVEfCNcqLFs-Q7tw" name="eventFinishDate">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9tpcQCHdEfC_nNkev7yNLQ" name="menuPromo" type="_0rUgICHdEfC_nNkev7yNLQ"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_X5w58CHVEfCNcqLFs-Q7tw" client="_LS11sCHVEfCNcqLFs-Q7tw" supplier="_JQKMQCHVEfCNcqLFs-Q7tw" contract="_JQKMQCHVEfCNcqLFs-Q7tw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ESnlICHeEfC_nNkev7yNLQ" name="reducePrice"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_E5SjkCHeEfC_nNkev7yNLQ" name="calculatePrice"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_tdEmMCHcEfC_nNkev7yNLQ" name="MenuItem"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_xKUUACHcEfC_nNkev7yNLQ" name="OrderItem"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_5qu14CHcEfC_nNkev7yNLQ" name="Receipt"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0rUgICHdEfC_nNkev7yNLQ" name="Map&lt;menuItem, int>"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_WeYK8CHeEfC_nNkev7yNLQ" name="MVoucher">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hcuH0CHeEfC_nNkev7yNLQ" name="Voucher">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_oXFR4CHeEfC_nNkev7yNLQ" name="createVoucher"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ptGCkCHeEfC_nNkev7yNLQ" name="deleteVoucher"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_sOZhsCHeEfC_nNkev7yNLQ" name="calculatePrice"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jmVfsCHeEfC_nNkev7yNLQ" name="VoucherImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xU5hcCHeEfC_nNkev7yNLQ" name="id" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zx-A0CHeEfC_nNkev7yNLQ" name="voucherName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_03-moCHeEfC_nNkev7yNLQ" name="voucherDescription">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2xIgoCHeEfC_nNkev7yNLQ" name="voucherType">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5DBqwCHeEfC_nNkev7yNLQ" name="code">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6EGGMCHeEfC_nNkev7yNLQ" name="minPurchaseAmount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7nP7ACHeEfC_nNkev7yNLQ" name="quota">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-JOIgCHeEfC_nNkev7yNLQ" name="startDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__6NlACHeEfC_nNkev7yNLQ" name="endDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_CNOJcCHfEfC_nNkev7yNLQ" name="createVoucher"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DY5SYCHfEfC_nNkev7yNLQ" name="deleteVoucher"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_EVfdgCHfEfC_nNkev7yNLQ" name="calculatePrice"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_J8IV4CHfEfC_nNkev7yNLQ" name="UUID"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_hkiKkCHfEfC_nNkev7yNLQ" name="MPayment">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_lecbYCHfEfC_nNkev7yNLQ" name="PaymentMethod">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_perWoCHfEfC_nNkev7yNLQ" name="calculateTotal"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_qjAhcCHfEfC_nNkev7yNLQ" name="processPayment"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tWShYCHfEfC_nNkev7yNLQ" name="PaymentMethodImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vpzcICHfEfC_nNkev7yNLQ" name="paymentId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_0VaPoCHfEfC_nNkev7yNLQ" name="createdAt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3paXACHfEfC_nNkev7yNLQ" name="paymentMethod">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5xzm4CHfEfC_nNkev7yNLQ" name="total">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8OsgECHfEfC_nNkev7yNLQ" name="receipt" type="_5qu14CHcEfC_nNkev7yNLQ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="__QmK0CHfEfC_nNkev7yNLQ" name="calculateTotal"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_AQ5KMCHgEfC_nNkev7yNLQ" name="processPayment"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Fo3UcCHgEfC_nNkev7yNLQ" name="Receipt">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IkA28CHgEfC_nNkev7yNLQ" name="receiptId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ltty0CHgEfC_nNkev7yNLQ" name="orderId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ORjokCHgEfC_nNkev7yNLQ" name="paidAt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QuxR4CHgEfC_nNkev7yNLQ" name="paidAmount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TrwncCHgEfC_nNkev7yNLQ" name="paymentMethod">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
         </packagedElement>
       </packagedElement>
     </packagedElement>
