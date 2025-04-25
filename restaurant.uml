@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg">
+  <uml:Model xmi:id="_VM_0ACBcEfCOcbW_joQElA" name="restaurant" visibility="protected">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_VNrwgCBcEfCOcbW_joQElA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_IDW1gCBiEfCOcbW_joQElA" name="Restaurant">
+      <packagedElement xmi:type="uml:Package" xmi:id="_9kYfwCBiEfCOcbW_joQElA" name="MAdminDashboard">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_M24ZcCBjEfCOcbW_joQElA" name="AdminDashboard"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iG-WICBnEfCOcbW_joQElA" name="AdminDashboardImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rag-ECBnEfCOcbW_joQElA" name="test"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_t5bQgCBnEfCOcbW_joQElA" name="username">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PNLJICBoEfCOcbW_joQElA" name="password">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ndS6kCBnEfCOcbW_joQElA" client="_iG-WICBnEfCOcbW_joQElA" supplier="_M24ZcCBjEfCOcbW_joQElA" contract="_M24ZcCBjEfCOcbW_joQElA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_pcXZ4CBoEfCOcbW_joQElA" name="manageEditMenu"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-06g8CHKEfCNcqLFs-Q7tw" name="MMenu">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_G1kA0CHPEfCNcqLFs-Q7tw" name="Menu">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_KxN-ECHPEfCNcqLFs-Q7tw" name="createMenu"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gTBdMCHQEfCNcqLFs-Q7tw" name="deleteMenu"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_hRnzcCHQEfCNcqLFs-Q7tw" name="getPrice"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jCZNgCHQEfCNcqLFs-Q7tw" name="MenuImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9Cw_ICHQEfCNcqLFs-Q7tw" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AGhEACHREfCNcqLFs-Q7tw" name="desc">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CghoUCHREfCNcqLFs-Q7tw" name="price">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_GdEWYCHREfCNcqLFs-Q7tw" client="_jCZNgCHQEfCNcqLFs-Q7tw" supplier="_G1kA0CHPEfCNcqLFs-Q7tw" contract="_G1kA0CHPEfCNcqLFs-Q7tw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wMjhsCHQEfCNcqLFs-Q7tw" name="createMenu"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_xAA-8CHQEfCNcqLFs-Q7tw" name="deleteMenu"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_xwxtgCHQEfCNcqLFs-Q7tw" name="getPrice"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_SNIrICHREfCNcqLFs-Q7tw" name="MOrder">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_3J-KUCHREfCNcqLFs-Q7tw" name="Order"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6OfEMCHREfCNcqLFs-Q7tw" name="OrderImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__oOJACHREfCNcqLFs-Q7tw" name="orderId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DxNXoCHSEfCNcqLFs-Q7tw" name="createdAt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7cWTkCHTEfCNcqLFs-Q7tw" name="orderItems" visibility="public" type="_yy8DMCHSEfCNcqLFs-Q7tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__YR9oiHTEfCNcqLFs-Q7tw" name="orderitemimpl" type="_yy8DMCHSEfCNcqLFs-Q7tw" aggregation="composite" association="__YQvgCHTEfCNcqLFs-Q7tw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__YR9oyHTEfCNcqLFs-Q7tw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__YSksCHTEfCNcqLFs-Q7tw" value="*"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_qS8GICHUEfCNcqLFs-Q7tw" client="_6OfEMCHREfCNcqLFs-Q7tw" supplier="_3J-KUCHREfCNcqLFs-Q7tw" contract="_3J-KUCHREfCNcqLFs-Q7tw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yy8DMCHSEfCNcqLFs-Q7tw" name="OrderItemImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5uuJkCHSEfCNcqLFs-Q7tw" name="item" type="_jCZNgCHQEfCNcqLFs-Q7tw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wf-QICHUEfCNcqLFs-Q7tw" name="quantity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DhcV8CHVEfCNcqLFs-Q7tw" name="MPromo">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_JQKMQCHVEfCNcqLFs-Q7tw" name="Promo"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LS11sCHVEfCNcqLFs-Q7tw" name="PromoImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NxpacCHVEfCNcqLFs-Q7tw" name="eventName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SFIo4CHVEfCNcqLFs-Q7tw" name="eventStartDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UxQ38CHVEfCNcqLFs-Q7tw" name="eventFinishDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_X5w58CHVEfCNcqLFs-Q7tw" client="_LS11sCHVEfCNcqLFs-Q7tw" supplier="_JQKMQCHVEfCNcqLFs-Q7tw" contract="_JQKMQCHVEfCNcqLFs-Q7tw"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__YQvgCHTEfCNcqLFs-Q7tw" visibility="protected" memberEnd="__YR9oiHTEfCNcqLFs-Q7tw __YSksSHTEfCNcqLFs-Q7tw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__YR9oCHTEfCNcqLFs-Q7tw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__YR9oSHTEfCNcqLFs-Q7tw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__YSksSHTEfCNcqLFs-Q7tw" name="orderimpl" type="_6OfEMCHREfCNcqLFs-Q7tw" association="__YQvgCHTEfCNcqLFs-Q7tw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VNT9ECBcEfCOcbW_joQElA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VNUkISBcEfCOcbW_joQElA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VNUkIiBcEfCOcbW_joQElA" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VNUkIyBcEfCOcbW_joQElA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VNUkJCBcEfCOcbW_joQElA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VNUkJSBcEfCOcbW_joQElA" key="Date" value="2024-10-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VNUkJiBcEfCOcbW_joQElA" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VNUkICBcEfCOcbW_joQElA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_FG8uwCBiEfCOcbW_joQElA" base_Package="_VM_0ACBcEfCOcbW_joQElA"/>
+  <umlvmprofile:vm xmi:id="_LYIY8CBiEfCOcbW_joQElA" base_Package="_IDW1gCBiEfCOcbW_joQElA"/>
+  <umlvmprofile:module xmi:id="_DZUS0CBjEfCOcbW_joQElA" base_Package="_9kYfwCBiEfCOcbW_joQElA"/>
+  <umlvmprofile:module xmi:id="_C4BKACHLEfCNcqLFs-Q7tw" base_Package="_-06g8CHKEfCNcqLFs-Q7tw"/>
+  <umlvmprofile:module xmi:id="_gbN6cCHREfCNcqLFs-Q7tw" base_Package="_SNIrICHREfCNcqLFs-Q7tw"/>
+</xmi:XMI>
