@@ -673,6 +673,10 @@
                 <element href="restaurant.uml#_vpzcICHfEfC_nNkev7yNLQ"/>
                 <layoutConstraint xsi:type="notation:Location" xmi:id="_vqW1wSHfEfC_nNkev7yNLQ"/>
               </children>
+              <children xsi:type="notation:Shape" xmi:id="_fgqjcCHhEfC_nNkev7yNLQ" type="Property_ClassAttributeLabel">
+                <element href="restaurant.uml#_ffxyoCHhEfC_nNkev7yNLQ"/>
+                <layoutConstraint xsi:type="notation:Location" xmi:id="_fgqjcSHhEfC_nNkev7yNLQ"/>
+              </children>
               <children xsi:type="notation:Shape" xmi:id="_0V7NACHfEfC_nNkev7yNLQ" type="Property_ClassAttributeLabel">
                 <element href="restaurant.uml#_0VaPoCHfEfC_nNkev7yNLQ"/>
                 <layoutConstraint xsi:type="notation:Location" xmi:id="_0V7NASHfEfC_nNkev7yNLQ"/>

@@ -147,6 +147,7 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8OsgECHfEfC_nNkev7yNLQ" name="receipt" type="_5qu14CHcEfC_nNkev7yNLQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ffxyoCHhEfC_nNkev7yNLQ" name="orderId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="__QmK0CHfEfC_nNkev7yNLQ" name="calculateTotal"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_AQ5KMCHgEfC_nNkev7yNLQ" name="processPayment"/>
         </packagedElement>
