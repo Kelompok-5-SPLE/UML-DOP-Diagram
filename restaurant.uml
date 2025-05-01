@@ -105,10 +105,9 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_E5SjkCHeEfC_nNkev7yNLQ" name="calculatePrice"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_tdEmMCHcEfC_nNkev7yNLQ" name="MenuItem"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_xKUUACHcEfC_nNkev7yNLQ" name="OrderItem"/>
       <packagedElement xmi:type="uml:DataType" xmi:id="_5qu14CHcEfC_nNkev7yNLQ" name="Receipt"/>
-      <packagedElement xmi:type="uml:DataType" xmi:id="_0rUgICHdEfC_nNkev7yNLQ" name="Map&lt;menuItem, int>"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_0rUgICHdEfC_nNkev7yNLQ" name="Map&lt;MenuImpl, int>"/>
       <packagedElement xmi:type="uml:Package" xmi:id="_WeYK8CHeEfC_nNkev7yNLQ" name="MVoucher">
         <packagedElement xmi:type="uml:Interface" xmi:id="_hcuH0CHeEfC_nNkev7yNLQ" name="Voucher">
           <ownedOperation xmi:type="uml:Operation" xmi:id="_oXFR4CHeEfC_nNkev7yNLQ" name="createVoucher"/>
@@ -166,7 +165,6 @@
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_8OsgECHfEfC_nNkev7yNLQ" name="receipt" type="_5qu14CHcEfC_nNkev7yNLQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ffxyoCHhEfC_nNkev7yNLQ" name="orderId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_4k4UMiH0EfCHXrqDtvt3yA" name="receipt" type="_Fo3UcCHgEfC_nNkev7yNLQ" aggregation="composite" association="_4k3tICH0EfCHXrqDtvt3yA"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3ZHrsCH0EfCHXrqDtvt3yA" client="_tWShYCHfEfC_nNkev7yNLQ" supplier="_lecbYCHfEfC_nNkev7yNLQ" contract="_lecbYCHfEfC_nNkev7yNLQ"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="__QmK0CHfEfC_nNkev7yNLQ" name="calculateTotal"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_AQ5KMCHgEfC_nNkev7yNLQ" name="processPayment"/>
@@ -183,6 +181,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TrwncCHgEfC_nNkev7yNLQ" name="paymentMethod">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_iiKgMCawEfC9gtY651zSyg" name="paymentmethodimpl" type="_tWShYCHfEfC_nNkev7yNLQ" aggregation="composite" association="_iiEZkCawEfC9gtY651zSyg"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -192,11 +191,11 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="__YSksSHTEfCNcqLFs-Q7tw" name="orderimpl" type="_6OfEMCHREfCNcqLFs-Q7tw" association="__YQvgCHTEfCNcqLFs-Q7tw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_4k3tICH0EfCHXrqDtvt3yA" memberEnd="_4k4UMiH0EfCHXrqDtvt3yA _4k4UNSH0EfCHXrqDtvt3yA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4k4UMCH0EfCHXrqDtvt3yA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4k4UMSH0EfCHXrqDtvt3yA" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iiEZkCawEfC9gtY651zSyg" memberEnd="_iiKgMCawEfC9gtY651zSyg _iiOxoCawEfC9gtY651zSyg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iiIrACawEfC9gtY651zSyg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iiJ5ICawEfC9gtY651zSyg" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_4k4UNSH0EfCHXrqDtvt3yA" name="paymentmethodimpl" type="_tWShYCHfEfC_nNkev7yNLQ" association="_4k3tICH0EfCHXrqDtvt3yA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_iiOxoCawEfC9gtY651zSyg" name="receipt" type="_Fo3UcCHgEfC_nNkev7yNLQ" association="_iiEZkCawEfC9gtY651zSyg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VNT9ECBcEfCOcbW_joQElA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VNUkISBcEfCOcbW_joQElA" source="PapyrusVersion">
@@ -217,4 +216,7 @@
   <umlvmprofile:module xmi:id="_DZUS0CBjEfCOcbW_joQElA" base_Package="_9kYfwCBiEfCOcbW_joQElA"/>
   <umlvmprofile:module xmi:id="_C4BKACHLEfCNcqLFs-Q7tw" base_Package="_-06g8CHKEfCNcqLFs-Q7tw"/>
   <umlvmprofile:module xmi:id="_gbN6cCHREfCNcqLFs-Q7tw" base_Package="_SNIrICHREfCNcqLFs-Q7tw"/>
+  <umlvmprofile:module xmi:id="_poFaACawEfC9gtY651zSyg" base_Package="_DhcV8CHVEfCNcqLFs-Q7tw"/>
+  <umlvmprofile:module xmi:id="_q6T24CawEfC9gtY651zSyg" base_Package="_WeYK8CHeEfC_nNkev7yNLQ"/>
+  <umlvmprofile:module xmi:id="_skTTgCawEfC9gtY651zSyg" base_Package="_hkiKkCHfEfC_nNkev7yNLQ"/>
 </xmi:XMI>
