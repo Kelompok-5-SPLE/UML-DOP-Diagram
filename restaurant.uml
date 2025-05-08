@@ -10,13 +10,7 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_UVyYsCHcEfC_nNkev7yNLQ" name="manageEditMenu"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_iG-WICBnEfCOcbW_joQElA" name="AdminDashboardImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_rag-ECBnEfCOcbW_joQElA" name="test"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_t5bQgCBnEfCOcbW_joQElA" name="username">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_PNLJICBoEfCOcbW_joQElA" name="password">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qOijUCcvEfCtcKB61dwtdA" name="AdminDashboardId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ndS6kCBnEfCOcbW_joQElA" client="_iG-WICBnEfCOcbW_joQElA" supplier="_M24ZcCBjEfCOcbW_joQElA" contract="_M24ZcCBjEfCOcbW_joQElA"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_pcXZ4CBoEfCOcbW_joQElA" name="manageEditMenu"/>
         </packagedElement>
@@ -27,7 +21,8 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_gTBdMCHQEfCNcqLFs-Q7tw" name="deleteMenu"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_hRnzcCHQEfCNcqLFs-Q7tw" name="getPrice"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_jCZNgCHQEfCNcqLFs-Q7tw" name="MenuImpl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_jCZNgCHQEfCNcqLFs-Q7tw" name="MenuImpl" visibility="package">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fry0kCcuEfCtcKB61dwtdA" name="MenuId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9Cw_ICHQEfCNcqLFs-Q7tw" name="name">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
@@ -77,7 +72,8 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_tCeykCH1EfCHXrqDtvt3yA" name="getOrderId"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_tsNFACH1EfCHXrqDtvt3yA" name="getCreatedAt"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_yy8DMCHSEfCNcqLFs-Q7tw" name="OrderItemImpl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_yy8DMCHSEfCNcqLFs-Q7tw" name="OrderItemImpl" visibility="package">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8W66cCcuEfCtcKB61dwtdA" name="OrderItemId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5uuJkCHSEfCNcqLFs-Q7tw" name="item" type="_jCZNgCHQEfCNcqLFs-Q7tw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_wf-QICHUEfCNcqLFs-Q7tw" name="quantity">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -89,17 +85,18 @@
           <ownedOperation xmi:type="uml:Operation" xmi:id="_qyahUCHdEfC_nNkev7yNLQ" name="reducePrice"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_wzTswCHdEfC_nNkev7yNLQ" name="calculatePrice"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_LS11sCHVEfCNcqLFs-Q7tw" name="PromoImpl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LS11sCHVEfCNcqLFs-Q7tw" name="PromoImpl" visibility="private">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f0WR0CcuEfCtcKB61dwtdA" name="PromoId" type="_J8IV4CHfEfC_nNkev7yNLQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_NxpacCHVEfCNcqLFs-Q7tw" name="eventName">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_SFIo4CHVEfCNcqLFs-Q7tw" name="eventStartDate">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_UxQ38CHVEfCNcqLFs-Q7tw" name="eventFinishDate">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9tpcQCHdEfC_nNkev7yNLQ" name="menuPromo" type="_0rUgICHdEfC_nNkev7yNLQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OQIWgCv3EfCPIZdSEGDWNw" name="evenStartDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_X5w58CHVEfCNcqLFs-Q7tw" client="_LS11sCHVEfCNcqLFs-Q7tw" supplier="_JQKMQCHVEfCNcqLFs-Q7tw" contract="_JQKMQCHVEfCNcqLFs-Q7tw"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_ESnlICHeEfC_nNkev7yNLQ" name="reducePrice"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_E5SjkCHeEfC_nNkev7yNLQ" name="calculatePrice"/>
