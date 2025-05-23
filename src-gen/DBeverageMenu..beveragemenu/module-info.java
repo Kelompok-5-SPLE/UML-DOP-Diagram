@@ -1,6 +1,7 @@
-module Restaurant.menu.core {
-	exports Restaurant.menu;
-    exports Restaurant.menu.core;
+module DBeverageMenu..beveragemenu {
+	requires DBeverageMenu..core;
+    exports DBeverageMenu..beveragemenu;
+
 	requires vmj.routing.route;
 	requires vmj.hibernate.integrator;
 	requires vmj.auth;
@@ -9,5 +10,5 @@ module Restaurant.menu.core {
 	requires java.naming;
 	requires java.net.http;
 
-	opens Restaurant.menu.core to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
+	opens DBeverageMenu..beveragemenu to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
 }

@@ -85,6 +85,28 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IGm74TM8EfCpt7jfWEmN0g" value="1"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_1oyHwDfzEfCmmZPsX1YLqQ" name="DBeverageMenu">
+          <packagedElement xmi:type="uml:Class" xmi:id="_1oyHwTfzEfCmmZPsX1YLqQ" name="MenuImpl">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_1oyHwjfzEfCmmZPsX1YLqQ" name="isIced">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_1oyHwzfzEfCmmZPsX1YLqQ" name="menuimpl" type="_jCZNgCHQEfCNcqLFs-Q7tw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1oyHxDfzEfCmmZPsX1YLqQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1oyHxTfzEfCmmZPsX1YLqQ" value="1"/>
+            </ownedAttribute>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_4qaFsDfzEfCmmZPsX1YLqQ" name="DSpicyMenu">
+        <packagedElement xmi:type="uml:Class" xmi:id="_F-w3sDf0EfCmmZPsX1YLqQ" name="MenuImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MG4sgDf0EfCmmZPsX1YLqQ" name="spiceLevel" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kR6GEDf0EfCmmZPsX1YLqQ" name="menuimpl" type="_jCZNgCHQEfCNcqLFs-Q7tw" association="_kR1NkDf0EfCmmZPsX1YLqQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kR6GETf0EfCmmZPsX1YLqQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kR6tIDf0EfCmmZPsX1YLqQ" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_bzGL8DI8EfCf0saQpWVSsQ" memberEnd="_bzGzAjI8EfCf0saQpWVSsQ _bzGzBTI8EfCf0saQpWVSsQ">
@@ -116,6 +138,12 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IGmU0DM8EfCpt7jfWEmN0g" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_IGni8DM8EfCpt7jfWEmN0g" name="menuimpl" type="_GRw0YDLfEfCpt7jfWEmN0g" association="_IGkfoDM8EfCpt7jfWEmN0g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kR1NkDf0EfCmmZPsX1YLqQ" memberEnd="_kR6GEDf0EfCmmZPsX1YLqQ _kR6tITf0EfCmmZPsX1YLqQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kR438Df0EfCmmZPsX1YLqQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kR5fADf0EfCmmZPsX1YLqQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kR6tITf0EfCmmZPsX1YLqQ" name="menuimpl" type="_F-w3sDf0EfCmmZPsX1YLqQ" association="_kR1NkDf0EfCmmZPsX1YLqQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VNT9ECBcEfCOcbW_joQElA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VNUkISBcEfCOcbW_joQElA" source="PapyrusVersion">
@@ -161,4 +189,11 @@
   <umlvmprofile:modifiedClass xmi:id="_KCf7EDLfEfCpt7jfWEmN0g" base_Class="_GRw0YDLfEfCpt7jfWEmN0g"/>
   <umlvmprofile:adds xmi:id="_k_Yv8DM6EfCpt7jfWEmN0g" base_Property="_faSYADLfEfCpt7jfWEmN0g"/>
   <umlvmprofile:modifies xmi:id="_Jh0VoDM8EfCpt7jfWEmN0g" base_Association="_IGkfoDM8EfCpt7jfWEmN0g"/>
+  <umlvmprofile:adds xmi:id="_1pvKADfzEfCmmZPsX1YLqQ" base_Property="_1oyHwjfzEfCmmZPsX1YLqQ"/>
+  <umlvmprofile:modifiedClass xmi:id="_1qCE8DfzEfCmmZPsX1YLqQ" base_Class="_1oyHwTfzEfCmmZPsX1YLqQ"/>
+  <umlvmprofile:delta xmi:id="_1qDTEDfzEfCmmZPsX1YLqQ" base_Package="_1oyHwDfzEfCmmZPsX1YLqQ"/>
+  <umlvmprofile:delta xmi:id="_Djxb8Df0EfCmmZPsX1YLqQ" base_Package="_4qaFsDfzEfCmmZPsX1YLqQ"/>
+  <umlvmprofile:modifiedClass xmi:id="_JTuBUDf0EfCmmZPsX1YLqQ" base_Class="_F-w3sDf0EfCmmZPsX1YLqQ"/>
+  <umlvmprofile:adds xmi:id="_hMqMYDf0EfCmmZPsX1YLqQ" base_Property="_MG4sgDf0EfCmmZPsX1YLqQ"/>
+  <umlvmprofile:modifies xmi:id="_uclxYDf0EfCmmZPsX1YLqQ" base_Association="_kR1NkDf0EfCmmZPsX1YLqQ"/>
 </xmi:XMI>

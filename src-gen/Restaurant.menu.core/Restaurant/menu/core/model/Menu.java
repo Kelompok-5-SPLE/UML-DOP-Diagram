@@ -14,5 +14,6 @@ public interface Menu {
 	public void setPrice(int price);
 	public String getCategory();
 	public void setCategory(String category);
+	org.eclipse.uml2.uml.internal.impl.ClassImpl@20606bcb (name: MenuImpl, visibility: package) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
 	HashMap<String, Object> toHashMap();
 }
